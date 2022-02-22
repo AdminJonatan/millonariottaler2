@@ -30,12 +30,12 @@ const Preguntas = () => {
       state.play[level - 1].incorrect_answers[2],
     ];
 
-    for (var i = 0; i < 4; i++) {
+    for (var j = 0; j < 4; j++) {
       numero = Math.floor(Math.random() * (4 - 0) + 0);
       if (!aleatorio.includes(numero)) {
-        aleatorio[i] = numero;
+        aleatorio[j] = numero;
       } else {
-        i--;
+        j--;
       }
     }
   } else {
@@ -55,13 +55,13 @@ const Preguntas = () => {
   }
 
   function handlerClick (e) {
-    if (e.target.value == state.play[level - 1].correct_answer ){
-      if(e.target.id == "primeraMultiple"){document.getElementById("primeraMultiple").className = "preguntaGanadora";}
-      if(e.target.id == "segundaMultiple"){document.getElementById("segundaMultiple").className = "preguntaGanadora";}
-      if(e.target.id == "terceraMultiple"){document.getElementById("terceraMultiple").className = "preguntaGanadora";}
-      if(e.target.id == "cuartaMultiple"){document.getElementById("cuartaMultiple").className = "preguntaGanadora";}
-      if(e.target.id == "primeraBoolean"){document.getElementById("primeraBoolean").className = "preguntaGanadora";}
-      if(e.target.id == "segundaBoolean"){document.getElementById("segundaBoolean").className = "preguntaGanadora";}
+    if (e.target.value === state.play[level - 1].correct_answer ){
+      if(e.target.id === "primeraMultiple"){document.getElementById("primeraMultiple").className = "preguntaGanadora";}
+      if(e.target.id === "segundaMultiple"){document.getElementById("segundaMultiple").className = "preguntaGanadora";}
+      if(e.target.id === "terceraMultiple"){document.getElementById("terceraMultiple").className = "preguntaGanadora";}
+      if(e.target.id === "cuartaMultiple"){document.getElementById("cuartaMultiple").className = "preguntaGanadora";}
+      if(e.target.id === "primeraBoolean"){document.getElementById("primeraBoolean").className = "preguntaGanadora";}
+      if(e.target.id === "segundaBoolean"){document.getElementById("segundaBoolean").className = "preguntaGanadora";}
       
       message.success({
         content: 'Felcitaciones!! Has ganado y subes al siguiente nivel',
@@ -79,12 +79,12 @@ const Preguntas = () => {
     },5000);
     
     }else{
-      if(e.target.id == "primeraMultiple"){document.getElementById("primeraMultiple").className = "preguntaPerdedora";}
-      if(e.target.id == "segundaMultiple"){document.getElementById("segundaMultiple").className = "preguntaPerdedora";}
-      if(e.target.id == "terceraMultiple"){document.getElementById("terceraMultiple").className = "preguntaPerdedora";}
-      if(e.target.id == "cuartaMultiple"){document.getElementById("cuartaMultiple").className = "preguntaPerdedora";}
-      if(e.target.id == "primeraBoolean"){document.getElementById("primeraBoolean").className = "preguntaPerdedora";}
-      if(e.target.id == "segundaBoolean"){document.getElementById("segundaBoolean").className = "preguntaPerdedora";}
+      if(e.target.id === "primeraMultiple"){document.getElementById("primeraMultiple").className = "preguntaPerdedora";}
+      if(e.target.id === "segundaMultiple"){document.getElementById("segundaMultiple").className = "preguntaPerdedora";}
+      if(e.target.id === "terceraMultiple"){document.getElementById("terceraMultiple").className = "preguntaPerdedora";}
+      if(e.target.id === "cuartaMultiple"){document.getElementById("cuartaMultiple").className = "preguntaPerdedora";}
+      if(e.target.id === "primeraBoolean"){document.getElementById("primeraBoolean").className = "preguntaPerdedora";}
+      if(e.target.id === "segundaBoolean"){document.getElementById("segundaBoolean").className = "preguntaPerdedora";}
       message.error({
         content: `Respuesta incorrecta, la Respuesta correcta era: ${state.play[level - 1].correct_answer} Esperamos que vuelvas pronto!!`,
         duration: 4,

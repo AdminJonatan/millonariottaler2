@@ -14,44 +14,44 @@ const Header2 = ({name,level,difficulty}) => {
 
    function updateValue()  {
      
-     if (level == 2){
+     if (level === 2){
      
      setAcumulador(1000 );
       return acumulador;
-     }if (level == 3){
+     }if (level === 3){
     
      setAcumulador(3000 );
       return acumulador;
      } 
-     if (level == 4){
+     if (level === 4){
     
      setAcumulador(7000 );
       return acumulador;
      } 
-     if (level == 5){
+     if (level === 5){
 
      setAcumulador(11000 );
       return acumulador;
      } 
-     if (level == 6){
+     if (level === 6){
     
      setAcumulador(16000 );
       return acumulador;
      } 
-     if (level == 7){
+     if (level === 7){
     
      setAcumulador(22000 );
       return acumulador;
      } 
-     if (level == 8){
+     if (level === 8){
     
      setAcumulador(29000 );
       return acumulador;
-     } if (level == 9){
+     } if (level === 9){
    
      setAcumulador(37000 );
       return acumulador;
-     } if (level == 10){
+     } if (level === 10){
  
      setAcumulador(47000 );
       return acumulador;
