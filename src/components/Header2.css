@@ -1,0 +1,81 @@
+.heder{
+    background: #479bb8;
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    height: 70px;
+    top: 20px;
+    left: 0;
+  }
+  
+  .impUsuario{
+      font-size: 20PX;
+      border-radius: 5px;
+      margin: 10px;
+      background: #fafafa;
+      color: rgb(7, 7, 7);
+      padding: 8px 14px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      max-width: 200px;
+     
+  }
+
+  .impGnancia{
+      font-size: 200PX;
+      border-radius: 5px;
+      margin: 5px 0;
+      background: #fafafa;
+      color: rgb(7, 7, 7);
+      padding: 8px 14px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      max-width: 200px;
+      margin-left: 5px; 
+      /* float: right; */
+  }
+  
+  
+  
+  
+  .imNivel{
+      font-size: 20PX;
+      border-radius: 5px;
+      background: #fafafa;
+      color: rgb(7, 7, 7);
+      padding: 8px 14px;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      margin-left: 350px;
+  }
+  
+  .laganancia{
+      margin-top: 20px;
+      position: absolute;
+      margin-left: 150px; 
+  }
+  
+  
+  .lanivel{
+      position: absolute;
+      margin-left: 300px;  
+      margin-top: 20px;
+  }
+
+  .acumulador{
+    font-size: 20PX;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: #fafafa;
+    color: rgb(7, 7, 7);
+    padding: 8px 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    max-width: 200px;
+    margin-left: 250px; 
+    /* float: right; */
+  }

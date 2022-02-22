@@ -1,0 +1,18 @@
+.headerColor {
+    background-color: gray;
+    height: 100px;
+}
+
+.containerHeader {
+ margin-left: 70%;
+}
+
+.inputHeader {
+  margin: 5px;
+  height: 30px;
+}
+
+.labelHeader {
+  text-align: center;
+  font-weight: 800;
+}
