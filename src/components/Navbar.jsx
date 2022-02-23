@@ -22,6 +22,7 @@ const Navbar = ({level}) => {
         <Menu.Item key="3000" className={level == 3 ? "nevelPlay" : ""} >3 $3.000</Menu.Item>
         <Menu.Item key="2000" className={level == 2 ? "nevelPlay" : ""}>2 $2.000</Menu.Item>
         <Menu.Item key="1000"className={level == 1 ? "nevelPlay" : ""}>1 $1.000</Menu.Item>
+        
 
         <Menu.Item key="link"></Menu.Item>
       </Menu>

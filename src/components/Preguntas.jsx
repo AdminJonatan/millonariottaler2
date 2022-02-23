@@ -10,7 +10,7 @@ import { message, Modal } from 'antd';
 import { ArrowLeftOutlined} from '@ant-design/icons';
 
 const Preguntas = () => {
-  const [level, setLevel] = useState(1);
+  const [level, setLevel] = useState(10);
   const [timer, setTimer] = useState(false);
 
   const { state } = useLocation();
@@ -68,15 +68,17 @@ const Preguntas = () => {
       });
       setTimer(false);
       setTimeout(function(){
-       document.getElementById(e.target.id).className = "btn-preguntas";
-        setLevel(level+1)
-        if(level==10){
-          Modal.success({
-            content: "Felicitaciones!!, Ahora eres millonario y te llevas un total de: 47.000",
-          });
-          navigate('/');
-        }
+        if(level!=10){
+          document.getElementById(e.target.id).className = "btn-preguntas";
+          setLevel(level+1) 
+        }  
     },5000);
+    if(level==10){
+      Modal.success({
+        content: "Felicitaciones!!, Ahora eres millonario y te llevas un total de: 55.000",
+      });
+      navigate('/');
+    }
     
     }else{
       if(e.target.id === "primeraMultiple"){document.getElementById("primeraMultiple").className = "preguntaPerdedora";}

@@ -55,6 +55,7 @@ const Header2 = ({name,level,difficulty}) => {
  
      setAcumulador(47000 );
       return acumulador;
+    
      }  
 
      
